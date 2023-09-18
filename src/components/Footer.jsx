@@ -3,7 +3,7 @@ import gitPng from '../images/social-media/linkedin.png'
 
 export default function Footer() {
   return (
-    <footer className="bg-main py-12 px-8 md:py-10 lg::py-8">
+    <footer className="bg-blue-900 mt-auto py-12 px-8 md:py-10 lg:py-8">
       <div className="max-w-4xl mx-auto flex items-center flex-col lg:flex-row lg:justify-between">
         <p className="text-white underline">provi@gmail.com</p>
 
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
 
         <a href="#" className="font-lora text-white text-base">
-          © Copyright Fabien Varlet. Tous droit réservés.
+          © Copyright Fabien Varlet. Tous droits réservés.
         </a>
       </div>
     </footer>

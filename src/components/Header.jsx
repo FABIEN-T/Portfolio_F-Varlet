@@ -3,7 +3,7 @@ import menuSvg from '../images/hero/menu.svg'
 export default function Header() {
   return (
     // Navigation
-    <nav className="bg-white z-50 fixed top-0 w-full shadow">
+    <nav className="bg-white z-50 fixed top-0 w-full shadow opacity-50">
       <div
         id="main-nav"
         className="bg-white max-w-3xl mx-auto p-4 flex items-center justify-between flex-wrap md:p-5"
