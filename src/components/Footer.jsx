@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
 
         <a href="#" className="font-lora text-white text-base">
-          © Copyright Fabien Varlet. Tous droits réservés.
+          © Copyright 2023 - Fabien Varlet
         </a>
       </div>
     </footer>
