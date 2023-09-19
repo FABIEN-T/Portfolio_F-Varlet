@@ -1,8 +1,7 @@
 import SectionPortrait from './SectionPortrait'
+import SectionSkills from './SectionSkills'
 
 export default function Sections() {
-  // let headerHeight = document.getElementById('myNav')
-  // console.log(headerHeight.clientHeight)
   return (
     <div className="w-full h-fit">
       {/* <div classNameName="h-fit bg-pink-500 mt-[60px] overflow-hidden md:mt-[64px] lg:mt-[68px]">
@@ -61,6 +60,7 @@ export default function Sections() {
         </p>
       </div> */}
       <SectionPortrait />
+      <SectionSkills />
     </div>
   )
 }
