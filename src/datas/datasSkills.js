@@ -39,11 +39,11 @@ export const datasSkills = [
     skill: 'Tailwind CSS',
     logoSvg: 'images/logosSkills/tailwind-css.svg',
   },
-  // {
-  //   id: 'logoStyled',
-  //   skill: 'Styled-Components',
-  //   logoSvg: 'images/logosSkills/styled-components.svg',
-  // },
+  {
+    id: 'logoStyled',
+    skill: 'Styled',
+    logoSvg: 'images/logosSkills/styled-components.svg',
+  },
   {
     id: 'logoJest',
     skill: 'Jest',

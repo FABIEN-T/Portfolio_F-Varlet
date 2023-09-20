@@ -3,7 +3,7 @@ import arrowDownload from '../images/general/ArrowDownload.png'
 
 export default function SectionPortrait() {
   return (
-    <section className="relative flex flex-col items-center mb-12 px-6 text-center font-regular pt-32 sm:mb-14">
+    <section className="relative flex flex-col items-center mb-12 px-6 text-center font-regular pt-24 sm:mb-14 sm:pt-32">
       {/* Portrait */}
       <div className="mx-auto w-44 relative mb-10 md:w-64 ring-2 ring-rose-600 ring-offset-2 rounded-full sm:ring-4 sm:ring-offset-4">
         <img src={photoProfil} alt="portrait de Fabien Varlet" />
