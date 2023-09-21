@@ -7,7 +7,7 @@ export default function Sections() {
     <main className="w-full h-fit">
       <SectionPortrait />
       <SectionSkills />
-      {/* <SectionProjects /> */}
+      <SectionProjects />
     </main>
   )
 }

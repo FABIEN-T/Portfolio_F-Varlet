@@ -14,7 +14,7 @@ export default function Header() {
           className="text-md lg:text-xl"
         >
           Fabien{' '}
-          <span className="font-bold">
+          <span className="font-medium">
             Varlet
             {/* <span className="text-rose-600">.</span> */}
           </span>
@@ -23,7 +23,7 @@ export default function Header() {
           aria-controls="main-navlist"
           aria-expanded="false"
           id="menu-toggler"
-          className="cursor-ponter w-7 md:hidden"
+          className="w-7 md:hidden"
         >
           <img
             width="28"
@@ -40,7 +40,7 @@ export default function Header() {
           <li className="block py-1 md:inline md-py-0 md:mr-6">
             <a
               href="#cv"
-              className="text-sm uppercase font-semibold hover:text-rose-600"
+              className="text-md uppercase font-bold hover:text-rose-600"
             >
               CV
             </a>
@@ -48,7 +48,7 @@ export default function Header() {
           <li className="block py-1 md:inline md-py-0 md:mr-6">
             <a
               href="#competences"
-              className="text-sm uppercase font-semibold hover:text-rose-600"
+              className="text-md uppercase font-bold hover:text-rose-600"
             >
               Compétences
             </a>
@@ -56,7 +56,7 @@ export default function Header() {
           <li className="block py-1 md:inline md-py-0 md:mr-6">
             <a
               href="#projets"
-              className="text-sm uppercase font-semibold hover:text-rose-600"
+              className="text-md uppercase font-bold hover:text-rose-600"
             >
               Projets
             </a>
@@ -64,7 +64,7 @@ export default function Header() {
           <li className="block py-1 md:inline md-py-0">
             <a
               href="#contact"
-              className="text-sm uppercase font-semibold hover:text-rose-600"
+              className="text-md uppercase font-bold hover:text-rose-600"
             >
               Contact
             </a>

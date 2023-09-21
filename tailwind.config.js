@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        poppins: ['Roboto', 'sans-serif'],
       },
       colors: {
         myBlue: '#003f66',

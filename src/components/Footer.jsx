@@ -29,7 +29,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <a href="#" className="font-lora text-white text-base">
+        <a href="#" className="text-white text-base">
           © Copyright 2023 - Fabien Varlet
         </a>
       </div>
