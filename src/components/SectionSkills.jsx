@@ -13,7 +13,7 @@ export default function SectionSkills() {
 
       <ul className="grid mx-auto grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-6 lg:max-w-3xl">
         {datasSkills.map(({ id, skill, logoSvg }) => (
-          <SkillCard key={id} id={id} skill={skill} logoSvg={logoSvg} />
+          <SkillCard key={id}skill={skill} logoSvg={logoSvg} />
         ))}
       </ul>
     </section>

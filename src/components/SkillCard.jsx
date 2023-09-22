@@ -4,7 +4,7 @@ export default function SkillCard({ id, skill, logoSvg }) {
   return (
     <li
       key={id}
-      className="group flex flex-col items-center w-20 h-20 text-sm px-1 py-1.5 rounded bg-gray-50 hover:bg-indigo-50 hover:scale-110 duration-200 sm:w-28 sm:h-28 sm:p-2"
+      className="group flex flex-col items-center w-20 h-20 text-sm px-0.5 py-1.5 rounded bg-gray-50 hover:bg-indigo-50 hover:scale-110 duration-200 sm:w-28 sm:h-28 sm:p-2"
     >
       <img
         src={logoSvg}

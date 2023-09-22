@@ -1,4 +1,5 @@
-import menuSvg from '../images/hero/menu-white.svg'
+// import menuSvg from '../images/hero/menu-white.svg'
+import Menu from './Menu'
 
 export default function Header() {
   return (
@@ -19,19 +20,7 @@ export default function Header() {
             {/* <span className="text-rose-600">.</span> */}
           </span>
         </a>
-        <button
-          aria-controls="main-navlist"
-          aria-expanded="false"
-          id="menu-toggler"
-          className="w-7 md:hidden"
-        >
-          <img
-            width="28"
-            height="28"
-            src={menuSvg}
-            alt="Ouvrir et fermer le menu"
-          />
-        </button>
+        <Menu />
 
         <ul
           id="main-navlist"
