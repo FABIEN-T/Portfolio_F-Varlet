@@ -1,3 +1,6 @@
+import { datasProjects } from '../datas/datasProjects'
+import ProjectCard from './ProjectCard'
+
 export default function SectionProjects() {
   return (
     <section
@@ -17,7 +20,31 @@ export default function SectionProjects() {
       </p>
       {/* Grid */}
       <div className="grid grid-cols-1 gap-12 mt-12 max-w-4xl mx-auto  md:gap-x-12 md:gap-y-28 md:mt-24 md:grid-cols-3 lg:max-w-6xl">
-        <div className="w-full max-w-sm mx-auto border-2 border-myBlue lg:max-w-full">
+        {datasProjects.map(
+          ({
+            title,
+            description,
+            image,
+            linkDemo,
+            linkGit,
+            linkDemoColor,
+            tags,
+            offsetY,
+          }) => (
+            <ProjectCard
+              key={title}
+              title={title}
+              description={description}
+              image={image}
+              linkDemo={linkDemo}
+              linkGit={linkGit}
+              linkDemoColor={linkDemoColor}
+              tags={tags}
+              offsetY={offsetY}
+            />
+          ),
+        )}
+        {/* <div className="w-full max-w-sm mx-auto border-2 border-myBlue lg:max-w-full">
           <div className="group relative overflow-hidden mb-4 bg-gray-light lg:mb:8">
             <img
               width="490"
@@ -200,7 +227,7 @@ export default function SectionProjects() {
               modi.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

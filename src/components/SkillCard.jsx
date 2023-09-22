@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 
+// export default function SkillCard({ object, index }) {
+//   const { id, skill, logoSvg } = object
 export default function SkillCard({ id, skill, logoSvg }) {
   return (
     <li

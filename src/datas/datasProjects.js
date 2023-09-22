@@ -3,19 +3,21 @@ export const datasProjects = [
     title: 'Booki',
     description: 'Trouvez votre hébergement pour des vacances de rêves',
     image: 'images/mockups/mockup1.png',
-    linkDemo: 'https://github.com/FABIEN-T/Fabien_P2',
-    linkGit: 'https://fabien-t.github.io/Fabien_P2/',
+    linkDemo: 'https://fabien-t.github.io/Fabien_P2/',
+    linkGit: 'https://github.com/FABIEN-T/Fabien_P2',
     linkDemoColor: 'bg-[#0065FC]',
     tags: ['HTML', 'CSS', 'Responsive'],
+    offsetY: 0,
   },
   {
-    title: 'ohmyfood',
+    title: 'Ohmyfood',
     description: 'Entreprise de commande de repas en ligne',
     image: 'images/mockups/mockup1.png',
     linkDemo: 'https://fabien-t.github.io/FabienVarlet_3_03122021/public/',
     linkGit: 'https://github.com/FABIEN-T/FabienVarlet_3_03122021',
     linkDemoColor: 'bg-gradient-to-br from-[#FF79DA] to-[#9356DC]',
     tags: ['HTML', 'Sass', 'Animations CSS', 'Loader'],
+    offsetY: 20,
   },
   {
     title: 'GameOn',
@@ -26,6 +28,7 @@ export const datasProjects = [
     linkGit: 'https://github.com/FABIEN-T/GameOn-website-FR',
     linkDemoColor: 'bg-[#fe142f]',
     tags: ['HTML', 'CSS', 'Javascript', 'Modale', 'Formulaire'],
+    offsetY: 40,
   },
   {
     title: 'Fisheye',
@@ -42,6 +45,7 @@ export const datasProjects = [
       'Accessibilité',
       'Site dyanmique',
     ],
+    offsetY: 0,
   },
   {
     title: 'Les petits plats',
@@ -52,6 +56,7 @@ export const datasProjects = [
     linkGit: 'https://github.com/FABIEN-T/Front-End-Fisheye',
     linkDemoColor: 'bg-[#D04F4F]',
     tags: ['HTML', 'Sass', 'Javascript', 'Tags', 'Json'],
+    offsetY: 20,
   },
   {
     title: 'Kasa',
@@ -61,6 +66,7 @@ export const datasProjects = [
     linkGit: 'https://github.com/FABIEN-T/Kasa_FV',
     linkDemoColor: 'bg-[#ff6060]',
     tags: ['HTML', 'Sass', 'REACT', 'Json'],
+    offsetY: 40,
   },
   {
     title: 'SportSee',
@@ -71,5 +77,6 @@ export const datasProjects = [
     linkGit: 'https://github.com/FABIEN-T/P12_SportSee',
     linkDemoColor: 'bg-[#ff0101]',
     tags: ['HTML', 'Sass', 'REACT', 'Recharts', 'Json'],
+    offsetY: 0,
   },
 ]

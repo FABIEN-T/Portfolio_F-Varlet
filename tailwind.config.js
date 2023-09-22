@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         myBlue: '#003f66',
+        myBlue40: '#9bafc0',
       },
     },
   },

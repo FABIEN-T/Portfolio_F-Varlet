@@ -28,7 +28,7 @@ export default function SectionPortrait() {
       {/* L'attribut download permet le téléchargement */}
       <a
         href="#"
-        className="group text-xs bg-myBlue text-white inline-flex max-w-260 mx-auto items-center py-4 px-6 hover:bg-rose-600 duration-200 sm:text-sm md:text-base mb:px-10"
+        className="group text-xs bg-myBlue text-white inline-flex max-w-260 mx-auto items-center py-4 px-6 hover:bg-myBlue40 sm:text-sm md:text-base mb:px-10"
         download
       >
         Télécharger mon CV
