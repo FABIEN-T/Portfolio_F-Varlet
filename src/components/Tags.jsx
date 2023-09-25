@@ -16,5 +16,5 @@ export default function Tags({ tags }) {
 }
 
 Tags.propTypes = {
-  tags: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
 }
