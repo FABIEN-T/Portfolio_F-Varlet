@@ -11,12 +11,12 @@ export default function ProjectCard({
   tags,
   offsetY,
 }) {
-  console.log(offsetY)
+  // console.log(offsetY)
   return (
     <div
-      className={`max-w-sm mx-auto bg-gray-100 rounded shadow-xl lg:max-w-full lg:translate-y-${offsetY}`}
+      className={`max-w-sm mx-auto bg-gray-100 rounded-lg shadow-xl lg:max-w-full lg:translate-y-${offsetY}`}
     >
-      <div className="group relative overflow-hidden mb-2 bg-gray-light lg:mb:8">
+      <div className="group relative overflow-hidden rounded-t-lg mb-2 bg-gray-light lg:mb:8">
         <img
           width="600"
           height="800"
@@ -25,20 +25,24 @@ export default function ProjectCard({
           className="object-cover group-hover:blur-sm"
         />
         {/* <div
-          className={`${linkDemoColor} flex justify-center items-center font-semibold sm:text-lg lg:text-2xl 
-        absolute top-0 left-0 w-full h-full text-gray-100 opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0`}
+          className="flex justify-center items-center font-semibold sm:text-lg lg:text-2xl 
+            absolute top-0 left-0 w-full h-full text-gray-100 opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-60"
         > */}
         <a
           href={linkDemo}
           className={`${linkDemoColor} flex justify-center items-center font-semibold sm:text-lg lg:text-2xl 
-            absolute top-0 left-0 w-full h-full text-gray-100 opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-60 `}
-        ></a>
-        <p
-          className="text-white flex justify-center items-center font-semibold sm:text-lg lg:text-2xl 
-            absolute top-0 left-0 w-full h-full z-10 translate-y-full duration-300 group-hover:translate-y-0"
+            absolute top-0 left-0 w-full h-full text-white opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-60 `}
         >
           Visiter le site
-        </p>
+        </a>
+        {/* <p
+            className="text-white flex justify-center items-center font-semibold sm:text-lg lg:text-2xl 
+            absolute top-0 left-0 w-full h-full z-10 translate-y-full duration-300 group-hover:translate-y-0"
+          >
+            Visiter le site
+          </p> */}
+        {/* </div> */}
+
         {/* </div> */}
       </div>
       <div className="group flex flex-col justify-between p-2">

@@ -19,7 +19,7 @@ export default function SectionProjects() {
         accusamus magni fuga, ratione cumque adipisci veritatis veniam modi.
       </p>
       {/* Grid */}
-      <div className="grid grid-cols-1 gap-8 mt-12 max-w-4xl mx-auto  md:gap-x-12 md:gap-y-28 md:mt-24 md:grid-cols-2 lg:grid-cols-3 lg:max-w-6xl">
+      <div className="grid grid-cols-1 gap-8 mt-12 max-w-4xl mx-auto  md:gap-x-12 md:gap-y-28 md:mt-24 md:grid-cols-2 lg:grid-cols-3 lg:max-w-5xl">
         {datasProjects.map(
           ({
             title,
