@@ -1,5 +1,7 @@
 import photoProfil from '../images/Photo_FV_300x300px.png'
 import arrowDownload from '../images/arrowDownload.svg'
+import linkedinSvg from '../images/linkedin-bg-black.svg'
+import gitSvg from '../images/github.svg'
 
 export default function SectionPortrait() {
   return (
@@ -18,28 +20,52 @@ export default function SectionPortrait() {
         Spécialisation <span className="italic">REACT</span>
         <span className="text-rose-600">.</span>
       </h1>
-      <p className="block text-sm max-w-xs mb-12 sm:font-light sm:text-lg sm:mb-14 sm:max-w-md md:text-xl md:max-w-xl">
+      <p className="block text-sm max-w-xs -mb-4 sm:font-light sm:text-lg sm:mb-14 sm:max-w-md md:text-xl md:max-w-xl">
         Après 25 ans dans la conduite de projets audiovisuels, je vous propose
         mes nouvelles compétences de développeur. Enthousiaste, créatif,
         consciencieux et persévérant, je souhaite m’investir dans les projets de
         votre entreprise.
       </p>
-      {/* Bouton "Télécharger mon CV" */}
-      {/* L'attribut download permet le téléchargement */}
-      <a
-        href="#"
-        className="group text-xs bg-myBlue text-white inline-flex max-w-260 mx-auto items-center py-4 px-6 hover:bg-myBlue40 sm:text-sm md:text-base mb:px-10"
-        download
-      >
-        Télécharger mon CV
-        <img
-          // width="20"
-          // height="20"
-          className="ml-4 h-4 -mt-0.5 group-hover:translate-y-0.5 duration-200 md:h-5 md:-mt-0.5"
-          src={arrowDownload}
-          alt=""
-        />
-      </a>
+
+      <div className="flex mt-16 -mb-8 space-x-2 sm:mt-0">
+        <a href="https://www.linkedin.com/in/fabien-varlet/" className="p-2">
+          <img
+            width="17"
+            height="17"
+            src={linkedinSvg}
+            alt="Visiter ma page linkedin"
+            className="h-12 w-12 sm:h-16 sm:w-16"
+          />
+        </a>
+
+        <a href="https://github.com/FABIEN-T" className="p-2">
+          <img
+            width="17"
+            height="17"
+            src={gitSvg}
+            alt="Visiter ma page Github"
+            className="h-12 w-12 sm:h-16 sm:w-16"
+          />
+        </a>
+      </div>
+
+      <div id="cv" className="pt-20">
+        {/* Bouton "Télécharger mon CV" */}
+        <a
+          href="./images/CV_Fabien_VARLET.pdf"
+          className="group text-xs bg-myBlue text-white inline-flex max-w-260 mx-auto items-center py-4 px-6 hover:bg-rose-600 sm:text-sm md:text-base mb:px-10"
+          download
+        >
+          Télécharger mon CV
+          <img
+            // width="20"
+            // height="20"
+            className="ml-4 h-4 -mt-0.5 group-hover:translate-y-0.5 duration-200 md:h-5 md:-mt-0.5"
+            src={arrowDownload}
+            alt=""
+          />
+        </a>
+      </div>
     </section>
   )
 }
