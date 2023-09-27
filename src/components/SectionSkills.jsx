@@ -11,7 +11,7 @@ export default function SectionSkills() {
         Mes Compétences
       </h2>
 
-      <ul className="grid mx-auto grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-6 lg:max-w-3xl">
+      <ul className="grid mx-auto grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-5 lg:max-w-3xl">
         {/* {datasSkills.map(({ object, index }) => (
           <SkillCard key={index} object={object} />
         ))} */}

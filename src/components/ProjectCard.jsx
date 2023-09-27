@@ -10,29 +10,53 @@ export default function ProjectCard({
   linkDemoColor,
   tags,
 }) {
-  // console.log('linkDemo', linkDemo)
-  {
-    linkDemo ? console.log('link ok') : console.log('No')
-  }
+  console.log('linkGit', linkGit === '')
+  // {
+  //   linkGit ? console.log('linkGit ok') : console.log('No')
+  // }
   return (
     <div
       className={`max-w-sm mx-auto bg-gray-200 border-2 border-gray-200 rounded-lg shadow-xl lg:max-w-full`}
     >
-      {/* lg:translate-y-${offsetY} */}
       <div className="group relative overflow-hidden rounded-t-lg mb-2 bg-gray-light lg:mb:8">
         <img
           width="600"
-          height="800"
+          height="600"
           src={image}
           alt={description}
           className="object-cover group-hover:grayscale"
           // className="saturate-50 group-hover:saturate-100"
         />
-        {/* <div
-          className="flex justify-center items-center font-semibold sm:text-lg lg:text-2xl 
-            absolute top-0 left-0 w-full h-full text-gray-100 opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-60"
-        > */}
-        {linkDemo ? (
+
+        {linkDemo !== '' && linkGit !== '' ? (
+          <a
+            href={linkDemo}
+            className="bg-myBlue text-white flex justify-center items-center m:text-lg lg:text-2xl absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80"
+          >
+            <div>
+              <h3>Visiter le site</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+                tenetur totam nemo itaque sed unde molestiae! Natus optio
+                facilis quas quaerat deserunt. Velit nisi harum, libero
+                veritatis architecto ad est.
+              </p>
+            </div>
+          </a>
+        ) : linkDemo === '' && linkGit !== '' ? (
+          <div className="bg-lime-800 text-white flex justify-center items-center m:text-lg lg:text-2xl absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80">
+            Need back
+          </div>
+        ) : (
+          <div
+            className="bg-rose-700 text-white flex justify-center items-center m:text-lg lg:text-2xl 
+        absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80"
+          >
+            En construction
+          </div>
+        )}
+
+        {/* {linkDemo ? (
           <a
             href={linkDemo}
             // className={`${linkDemoColor} flex justify-center items-center text-white sm:text-lg lg:text-2xl
@@ -43,16 +67,13 @@ export default function ProjectCard({
             Visiter le site
           </a>
         ) : (
-          // {linkGit ? (
-          //   <div></div>) : (
           <div
             className="bg-rose-600 text-white flex justify-center items-center m:text-lg lg:text-2xl 
-          absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80"
+        absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80"
           >
             En construction
           </div>
-          // )}
-        )}
+        )} */}
       </div>
       <div className="group flex flex-col justify-between p-2">
         <div>
