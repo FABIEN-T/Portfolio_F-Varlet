@@ -5,7 +5,7 @@ import gitSvg from '../images/github.svg'
 
 export default function SectionPortrait() {
   return (
-    <section className="relative flex flex-col items-center mb-12 px-6 text-center font-regular pt-24 sm:mb-14 sm:pt-32">
+    <section className="relative flex flex-col items-center mb-20 px-6 text-center font-regular pt-24 sm:mb-20 sm:pt-32">
       {/* Portrait */}
       <div className="mx-auto w-44 relative mb-10 ring-2 ring-rose-600 ring-offset-2 rounded-full md:ring-[3px] md:ring-offset-[3px] md:w-60">
         <img src={photoProfil} alt="portrait de Fabien Varlet" />

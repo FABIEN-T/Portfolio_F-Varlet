@@ -5,7 +5,7 @@ export default function SectionProjects() {
   return (
     <section
       id="projets"
-      className="pt-20 pb-20 px-4 sm:pb-28 sm:pt-20 lg:pb-28"
+      className="pt-20 pb-20 px-4 sm:pb-28 sm:pt-20 lg:pb-28 lg:pt-24"
     >
       <h2 className="text-myBlue relative z-0 text-2xl w-fit mx-auto mb-7 sm:text-4xl sm:mb-10 md:text-5xl md:mb-8">
         Mes Projets
@@ -25,7 +25,8 @@ export default function SectionProjects() {
             linkDemo,
             linkGit,
             linkDemoColor,
-            tags,
+            tagsBlue,
+            tagsRed,
             offsetY,
           }) => (
             <ProjectCard
@@ -36,7 +37,8 @@ export default function SectionProjects() {
               linkDemo={linkDemo}
               linkGit={linkGit}
               linkDemoColor={linkDemoColor}
-              tags={tags}
+              tagsBlue={tagsBlue}
+              tagsRed={tagsRed}
               offsetY={offsetY}
             />
           ),

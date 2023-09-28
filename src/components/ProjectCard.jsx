@@ -8,9 +8,10 @@ export default function ProjectCard({
   linkDemo,
   linkGit,
   linkDemoColor,
-  tags,
+  tagsBlue,
+  tagsRed,
 }) {
-  console.log('linkGit', linkGit === '')
+  // console.log('linkGit', linkGit === '')
   // {
   //   linkGit ? console.log('linkGit ok') : console.log('No')
   // }
@@ -49,7 +50,7 @@ export default function ProjectCard({
           </div>
         ) : (
           <div
-            className="bg-rose-700 text-white flex justify-center items-center m:text-lg lg:text-2xl 
+            className="bg-red-600 text-white flex justify-center items-center m:text-lg lg:text-2xl 
         absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80"
           >
             En construction
@@ -96,7 +97,10 @@ export default function ProjectCard({
             {description}
           </p>
         </div>
-        <Tags tags={tags} />
+        {/* <div className="flex flex-row flex-wrap"> */}
+        <Tags tags={tagsBlue} colorTag={'myBlue'} />
+        <Tags tags={tagsRed} colorTag={'rose-600'} />
+        {/* </div> */}
       </div>
     </div>
   )
@@ -109,6 +113,8 @@ ProjectCard.propTypes = {
   linkDemo: PropTypes.string,
   linkGit: PropTypes.string,
   linkDemoColor: PropTypes.string,
-  tags: PropTypes.arrayOf(PropTypes.string),
+  colorTag: PropTypes.string,
+  tagsBlue: PropTypes.arrayOf(PropTypes.string),
+  tagsRed: PropTypes.arrayOf(PropTypes.string),
   offsetY: PropTypes.number,
 }
