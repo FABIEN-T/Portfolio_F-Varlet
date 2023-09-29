@@ -10,12 +10,13 @@ export default function SectionProjects() {
       <h2 className="text-myBlue relative z-0 text-2xl w-fit mx-auto mb-7 sm:text-4xl sm:mb-10 md:text-5xl md:mb-8">
         Mes Projets
       </h2>
-      <p className="text-xs text-gray-dark leading-5 max-w-xs mx-auto text-center sm:text-sm sm:leading-7 sm:max-w-sm lg:max-w-md">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-        accusamus magni fuga, ratione cumque adipisci veritatis veniam modi.
+      <p className="text-xs text-gray-dark leading-5 max-w-xs mx-auto text-center sm:leading-6 sm:font-light sm:text-lg sm:mb-14 sm:max-w-md md:text-xl md:max-w-xl">
+        Projets professionnalisants réalisés en autonomie lors de ma formation
+        de Développeur d'Applications Javascript-React (Titre RNCP38038 ) et
+        projets personnels
       </p>
       {/* Grid */}
-      <div className="grid grid-cols-1 gap-y-8 mt-12 max-w-xs mx-auto px-0 md:gap-x-8 md:gap-y-12 md:mt-16 md:max-w-2xl md:grid-cols-2 lg:grid-cols-3 lg:max-w-5xl">
+      <div className="grid grid-cols-1 gap-y-8 mt-12 max-w-xs mx-auto px-0 md:gap-x-12 md:gap-y-12 md:mt-16 md:max-w-2xl md:grid-cols-2 lg:grid-cols-3 lg:max-w-5xl">
         {datasProjects.map(
           ({
             title,
@@ -24,7 +25,8 @@ export default function SectionProjects() {
             noLink,
             linkDemo,
             linkGit,
-            linkDemoColor,
+            catCard,
+            bgColor,
             tagsBlue,
             tagsRed,
             offsetY,
@@ -36,7 +38,8 @@ export default function SectionProjects() {
               image={image}
               linkDemo={linkDemo}
               linkGit={linkGit}
-              linkDemoColor={linkDemoColor}
+              catCard={catCard}
+              bgColor={bgColor}
               tagsBlue={tagsBlue}
               tagsRed={tagsRed}
               offsetY={offsetY}

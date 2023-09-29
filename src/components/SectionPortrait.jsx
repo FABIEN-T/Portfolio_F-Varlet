@@ -53,7 +53,7 @@ export default function SectionPortrait() {
         {/* Bouton "Télécharger mon CV" */}
         <a
           href="./images/CV_Fabien_VARLET.pdf"
-          className="group text-xs bg-myBlue text-white inline-flex max-w-260 mx-auto items-center py-4 px-6 hover:bg-rose-600 sm:text-sm md:text-base mb:px-10"
+          className="group text-xs bg-myBlue text-white inline-flex max-w-260 mx-auto items-center py-4 px-6 hover:bg-rose-700 sm:text-sm md:text-base mb:px-10"
           download
         >
           Télécharger mon CV

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import ListTags from './ListTags'
 import Tags from './Tags'
 
 export default function ProjectCard({
@@ -7,7 +8,8 @@ export default function ProjectCard({
   image,
   linkDemo,
   linkGit,
-  linkDemoColor,
+  catCard,
+  bgColor,
   tagsBlue,
   tagsRed,
 }) {
@@ -25,62 +27,40 @@ export default function ProjectCard({
           height="600"
           src={image}
           alt={description}
-          className="object-cover group-hover:grayscale"
+          className="object-cover"
           // className="saturate-50 group-hover:saturate-100"
         />
 
-        {linkDemo !== '' && linkGit !== '' ? (
-          <a
-            href={linkDemo}
-            className="bg-myBlue text-white flex justify-center items-center m:text-lg lg:text-2xl absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80"
-          >
-            <div>
-              <h3>Visiter le site</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-                tenetur totam nemo itaque sed unde molestiae! Natus optio
-                facilis quas quaerat deserunt. Velit nisi harum, libero
-                veritatis architecto ad est.
-              </p>
-            </div>
-          </a>
-        ) : linkDemo === '' && linkGit !== '' ? (
-          <div className="bg-lime-800 text-white flex justify-center items-center m:text-lg lg:text-2xl absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80">
-            Need back
-          </div>
-        ) : (
+        <div>
           <div
-            className="bg-red-600 text-white flex justify-center items-center m:text-lg lg:text-2xl 
-        absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80"
-          >
-            En construction
-          </div>
-        )}
+            className={`absolute z-10 top-0 left-0 w-full h-full ${bgColor} opacity-0 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-95`}
+          ></div>
 
-        {/* {linkDemo ? (
-          <a
-            href={linkDemo}
-            // className={`${linkDemoColor} flex justify-center items-center text-white sm:text-lg lg:text-2xl
-            //   absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-60 `}
-            className="bg-myBlue text-white flex justify-center items-center m:text-lg lg:text-2xl 
-            absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80"
-          >
-            Visiter le site
-          </a>
-        ) : (
-          <div
-            className="bg-rose-600 text-white flex justify-center items-center m:text-lg lg:text-2xl 
-        absolute top-0 left-0 w-full h-full font-bold opacity-0 z-10 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-80"
-          >
-            En construction
+          <div className="absolute z-20 top-0 left-0 w-full h-full flex flex-col pt-14 px-6 translate-y-full duration-300 group-hover:translate-y-0">
+            {(catCard === 1 || catCard === 3) && (
+              <a href={linkDemo}>
+                <h3 className="animate-wiggle mx-auto max-w-fit bg-rose-700 ring-1 ring-white text-white rounded px-3 py-1 md:text-lg lg:text-xl">
+                  {catCard === 1 && 'Visiter le site'}
+                  {catCard === 3 && 'Lien Figma'}
+                </h3>
+              </a>
+            )}
+            {catCard === 4 && (
+              <h3 className="mx-auto max-w-fit ring-1 ring-white text-white rounded px-3 py-1 md:text-lg lg:text-xl">
+                En construction
+              </h3>
+            )}
+            <div className="mt-6 pl-4">
+              <ListTags list={tagsRed} />
+            </div>
           </div>
-        )} */}
+        </div>
       </div>
-      <div className="group flex flex-col justify-between p-2">
+      <div className="group flex flex-col p-2">
         <div>
           <div className="flex flex-row justify-between items-center">
             <p className="font-medium text-xl mb-1 sm:text-2xl">{title}</p>
-            {linkGit ? (
+            {(catCard === 1 || catCard === 2) && (
               <a href={linkGit}>
                 <img
                   src="images/logosSkills/github.svg"
@@ -88,8 +68,6 @@ export default function ProjectCard({
                   className="h-7 -mt-1 hover:bg-white rounded-full"
                 />
               </a>
-            ) : (
-              <div></div>
             )}
           </div>
 
@@ -97,10 +75,7 @@ export default function ProjectCard({
             {description}
           </p>
         </div>
-        {/* <div className="flex flex-row flex-wrap"> */}
-        <Tags tags={tagsBlue} colorTag={'myBlue'} />
-        <Tags tags={tagsRed} colorTag={'rose-600'} />
-        {/* </div> */}
+        <Tags tags={tagsBlue} colorTag={'bg-myBlue'} />
       </div>
     </div>
   )
@@ -112,7 +87,8 @@ ProjectCard.propTypes = {
   image: PropTypes.string,
   linkDemo: PropTypes.string,
   linkGit: PropTypes.string,
-  linkDemoColor: PropTypes.string,
+  catCard: PropTypes.number,
+  bgColor: PropTypes.string,
   colorTag: PropTypes.string,
   tagsBlue: PropTypes.arrayOf(PropTypes.string),
   tagsRed: PropTypes.arrayOf(PropTypes.string),
