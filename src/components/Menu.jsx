@@ -72,7 +72,7 @@ export default function Menu() {
             href="#contact"
             className="text-sm uppercase font-semibold hover:text-rose-600"
           >
-            Contact
+            Contactez-moi
           </a>
         </li>
       </ul>

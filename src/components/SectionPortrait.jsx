@@ -17,7 +17,7 @@ export default function SectionPortrait() {
         Développeur <span className="italic">Frontend</span>
       </h1>
       <h1 className="text-2xl mb-12 max-w-xs mx-auto sm:text-3xl sm:font-light sm:mb-14 sm:max-w-md md:text-3xl md:max-w-xl">
-        Spécialisation <span className="italic">REACT</span>
+        Javascript - <span className="italic">REACT</span>
         <span className="text-rose-600">.</span>
       </h1>
       <p className="block text-sm max-w-xs -mb-4 sm:font-light sm:text-lg sm:mb-14 sm:max-w-md md:text-xl md:max-w-xl">
@@ -52,7 +52,7 @@ export default function SectionPortrait() {
       <div id="cv" className="pt-20">
         {/* Bouton "Télécharger mon CV" */}
         <a
-          href="./images/CV_Fabien_VARLET.pdf"
+          href="https://drive.google.com/file/d/1QWmtKJbMJMNs83q3y9uY_yqyqdjNu45B/view"
           className="group text-xs bg-myBlue text-white inline-flex max-w-260 mx-auto items-center py-4 px-6 hover:bg-rose-700 sm:text-sm md:text-base mb:px-10"
           download
         >
