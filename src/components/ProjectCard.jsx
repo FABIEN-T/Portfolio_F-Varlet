@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import ListTags from './ListTags'
 import Tags from './Tags'
+import tool from '../images/tool.svg'
 
 export default function ProjectCard({
   title,
@@ -33,7 +34,7 @@ export default function ProjectCard({
 
         <div>
           <div
-            className={`absolute z-10 top-0 left-0 w-full h-full ${bgColor} opacity-0 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-95`}
+            className={`absolute z-10 top-0 left-0 w-full h-full ${bgColor} opacity-0 translate-y-full duration-300 group-hover:translate-y-0 group-hover:opacity-100`}
           ></div>
 
           <div className="absolute z-20 top-0 left-0 w-full h-full flex flex-col pt-14 px-6 translate-y-full duration-300 group-hover:translate-y-0">
@@ -46,9 +47,18 @@ export default function ProjectCard({
               </a>
             )}
             {catCard === 4 && (
-              <h3 className="mx-auto max-w-fit ring-1 ring-white text-white rounded px-3 py-1 md:text-lg lg:text-xl">
-                En construction
-              </h3>
+              <div className="flex flex-col">
+                <h3 className="mx-auto max-w-fit italic text-white mb-4  px-3 py-1 md:text-lg lg:text-xl">
+                  En construction
+                </h3>
+                <img
+                  width="16"
+                  height="16"
+                  src={tool}
+                  alt="icône de clef à molette"
+                  className="h-16 w-16 rotate-90 mx-auto"
+                />
+              </div>
             )}
             <div className="mt-6 pl-4">
               <ListTags list={tagsRed} />

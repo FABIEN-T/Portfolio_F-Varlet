@@ -34,7 +34,7 @@ export default function SectionPortrait() {
             height="17"
             src={linkedinSvg}
             alt="Visiter ma page linkedin"
-            className="h-12 w-12 sm:h-16 sm:w-16"
+            className="h-12 w-12 rounded-full sm:h-16 sm:w-16 hover:bg-myBlue40 hover:animate-pulse"
           />
         </a>
 
@@ -44,7 +44,7 @@ export default function SectionPortrait() {
             height="17"
             src={gitSvg}
             alt="Visiter ma page Github"
-            className="h-12 w-12 sm:h-16 sm:w-16"
+            className="h-12 w-12 rounded-full sm:h-16 sm:w-16 hover:bg-myBlue40 hover:animate-pulse"
           />
         </a>
       </div>

@@ -12,13 +12,12 @@ export default function Header() {
         <a
           href="#top"
           aria-label="Accueil du portfolio"
-          className="text-md lg:text-xl"
+          className="text-md font-medium lg:text-xl"
         >
-          Fabien{' '}
-          <span className="font-medium">
-            Varlet
-            {/* <span className="text-rose-600">.</span> */}
-          </span>
+          Fabien {/* <span className="font-medium"> */}
+          Varlet
+          {/* <span className="text-rose-600">.</span> */}
+          {/* </span> */}
         </a>
         <Menu />
 
@@ -52,10 +51,10 @@ export default function Header() {
           </li>
           <li className="block py-1 md:inline md-py-0">
             <a
-              href="#contact"
+              href="mailto:fabien.varlet@live.fr"
               className="text-md uppercase font-bold hover:text-rose-600"
             >
-              Contact
+              Contactez-moi
             </a>
           </li>
         </ul>

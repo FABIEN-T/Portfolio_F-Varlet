@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import menuSvg from '../images/hero/menu-white.svg'
+import menuSvg from '../images/menu-white.svg'
 // import { datasMenu } from '../datas/datasMenu'
 // import MenuList from './MenuList'
 
