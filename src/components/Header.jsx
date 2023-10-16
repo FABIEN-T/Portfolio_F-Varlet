@@ -51,7 +51,8 @@ export default function Header() {
           </li>
           <li className="block py-1 md:inline md-py-0">
             <a
-              href="mailto:fabien.varlet@live.fr"
+              // href="mailto:fabien.varlet@live.fr"
+              href="#contact"
               className="text-md uppercase font-bold hover:text-rose-600"
             >
               Contactez-moi

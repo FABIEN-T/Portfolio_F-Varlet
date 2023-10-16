@@ -35,6 +35,7 @@ export default function SectionPortrait() {
             src={linkedinSvg}
             alt="Visiter ma page linkedin"
             className="h-12 w-12 rounded-full sm:h-16 sm:w-16 hover:bg-myBlue40 hover:animate-pulse"
+            // className="h-12 w-12 rounded-full sm:h-16 sm:w-16 hover:bg-rose-700"
           />
         </a>
 
@@ -56,7 +57,7 @@ export default function SectionPortrait() {
           className="group text-xs bg-myBlue text-white inline-flex max-w-260 mx-auto items-center py-4 px-6 hover:bg-rose-700 sm:text-sm md:text-base mb:px-10"
           download
         >
-          Télécharger mon CV
+          Téléchargez mon CV
           <img
             // width="20"
             // height="20"

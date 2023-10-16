@@ -5,15 +5,9 @@
             "actions": [
                 {
                     "type": "email",
-                    "to": "your@email.com"
+                    "to": "fabien.varlet@live.fr"
                 }
-            ],
-            "fields": {
-                "email": {
-                    "required": "true",
-                    "type": "email"
-                }
-            }
+            ]
         }
     }
 }

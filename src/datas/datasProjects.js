@@ -45,7 +45,7 @@ export const datasProjects = [
   },
   {
     title: 'Fisheye',
-    description: 'Site de photographes freelance',
+    description: 'Site de photographes freelances',
     image: 'images/mockups/P6_Fisheye.jpg',
     linkDemo: 'https://fabien-t.github.io/Front-End-Fisheye/public/index.html',
     linkGit: 'https://github.com/FABIEN-T/Front-End-Fisheye',

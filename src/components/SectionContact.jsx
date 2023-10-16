@@ -1,5 +1,8 @@
 // import { ContactUs } from './ContactUs'
 import MyForm from './MyForm'
+import MyForm2 from './MyForm2'
+import MyForm3 from './MyForm3'
+import MyFormBis from './MyFormBis'
 
 export default function SectionContact() {
   return (
@@ -8,8 +11,7 @@ export default function SectionContact() {
         Contactez-moi
       </h2>
       {/* <ContactUs /> */}
-      {/* 
-      <MyForm /> */}
+      <MyFormBis />
     </section>
   )
 }

@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-myBlue mt-auto py-6 px-8 md:py-6 lg:py-8">
       <div className="flex flex-col max-w-4xl mx-auto items-center  md:flex-row md:justify-between">
         <a
-          href="mailto:fabien.varlet@live.fr"
+          // href="mailto:fabien.varlet@live.fr"
           className="text-white text-xs font-semi-bold underline  sm:text-sm hover:animate-pulse"
         >
           Contactez-moi
