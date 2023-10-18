@@ -8,7 +8,7 @@ export default function App() {
     <>
       <Header />
       <div className="flex flex-col h-full">
-        <Sections />
+        <Sections className="scroll-smooth" />
         <Footer />
       </div>
     </>

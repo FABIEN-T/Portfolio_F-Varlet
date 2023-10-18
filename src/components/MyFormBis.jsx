@@ -46,7 +46,7 @@ export default function MyForm() {
             type="text"
             name="firstName"
             id="firstName"
-            placeholder="Prénom"
+            // placeholder="Prénom"
             required
             autoComplete="given-name"
             className="text-black p-2 mb-4"
@@ -66,7 +66,7 @@ export default function MyForm() {
             type="text"
             name="secondName"
             id="secondName"
-            placeholder="Nom de famille"
+            // placeholder="Nom de famille"
             required
             autoComplete="family-name"
             className="text-black p-2 mb-4"
@@ -103,8 +103,7 @@ export default function MyForm() {
         rows="7"
         name="message"
         id="message"
-        placeholder="Votre site est magnifique."
-        required=""
+        required
         className="text-black p-2 mb-4"
       ></textarea>
       <ValidationError
