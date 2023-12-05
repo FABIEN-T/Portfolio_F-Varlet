@@ -1,5 +1,6 @@
 import Header from './components/Header'
 // import SectionsFooter from './components/SectionsFooter'
+// Commentaire
 import Footer from './components/Footer'
 import Sections from './components/Sections'
 

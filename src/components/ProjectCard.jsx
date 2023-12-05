@@ -20,9 +20,9 @@ export default function ProjectCard({
   // }
   return (
     <div
-      className={`max-w-sm mx-auto bg-gray-200 border-2 border-gray-200 rounded-lg shadow-xl lg:max-w-full`}
+      className={`max-w-sm mx-auto bg-gray-200  rounded-lg shadow-xl lg:max-w-full`}
     >
-      <div className="group relative overflow-hidden rounded-t-lg p-3 mb-2 bg-gray-light lg:mb:8">
+      <div className="group relative overflow-hidden rounded-t-lg p-1 mb-2 bg-gray-light lg:mb:8">
         <img
           width="600"
           height="600"
