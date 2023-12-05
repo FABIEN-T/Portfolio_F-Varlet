@@ -20,7 +20,7 @@ export default function ProjectCard({
   // }
   return (
     <div
-      className={`max-w-sm mx-auto bg-gray-200  rounded-lg shadow-xl lg:max-w-full`}
+      className={`max-w-sm mx-auto bg-gray-200 rounded-lg shadow-xl lg:max-w-full`}
     >
       <div className="group relative overflow-hidden rounded-t-lg p-1 mb-2 bg-gray-light lg:mb:8">
         <img
@@ -28,7 +28,7 @@ export default function ProjectCard({
           height="600"
           src={image}
           alt={description}
-          className="object-cover"
+          className="object-cover rounded-t-lg"
           // className="saturate-50 group-hover:saturate-100"
         />
 
