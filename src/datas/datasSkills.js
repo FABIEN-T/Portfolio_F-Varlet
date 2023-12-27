@@ -59,9 +59,14 @@ export const datasSkills = [
     skill: 'Github',
     logoSvg: 'images/logosSkills/github.svg',
   },
+  // {
+  //   id: 'logoFigma',
+  //   skill: 'Figma',
+  //   logoSvg: 'images/logosSkills/figma.svg',
+  // },
   {
-    id: 'logoFigma',
-    skill: 'Figma',
-    logoSvg: 'images/logosSkills/figma.svg',
+    id: 'logoTypeScript',
+    skill: 'TypeScript',
+    logoSvg: 'images/logosSkills/typescript.svg',
   },
 ]
