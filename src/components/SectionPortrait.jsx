@@ -53,9 +53,10 @@ export default function SectionPortrait() {
       <div id="cv" className="pt-20">
         {/* Bouton "Télécharger mon CV" */}
         <a
-          href="https://drive.google.com/file/d/1Gb08rTbJ2mWtDR4J744toqO2-jrx8Z34/view"
+          href="../../public/cv/Fabien VARLET_CV.pdf"
           className="group text-xs bg-myBlue text-white inline-flex max-w-260 mx-auto items-center py-4 px-6 hover:bg-rose-700 sm:text-sm md:text-base mb:px-10"
-          download
+          // download
+          target='_blank'
         >
           Téléchargez mon CV
           <img
