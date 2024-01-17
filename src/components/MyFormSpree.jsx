@@ -1,21 +1,30 @@
 import React, { useState } from 'react'
-import { useForm, ValidationError } from '@formspree/react'
+import { ValidationError } from '@formspree/react'
 import axios from 'axios'
+import Modal from './modal/Modal'
+import useModal from "./modal/useModal"
 
-export default function MyForm() {
+export default function MyFormSpree() {
+  const { isOpen, openModal, closeModal } = useModal()
+
   const [serverState, setServerState] = useState({
     submitting: false,
     status: null,
   })
+
   const handleServerResponse = (ok, msg, form) => {
     setServerState({
       submitting: false,
       status: { ok, msg },
     })
-    if (ok) {
+    if (ok) {      
+      openModal()
+      console.log('isOpen2', isOpen)
       form.reset()
     }
   }
+
+
   const handleOnSubmit = (e) => {
     e.preventDefault()
     const form = e.target
@@ -26,12 +35,15 @@ export default function MyForm() {
       data: new FormData(form),
     })
       .then((r) => {
-        handleServerResponse(true, 'Merci !', form)
+        handleServerResponse(true, '', form)  
       })
       .catch((r) => {
         handleServerResponse(false, r.response.data.error, form)
       })
   }
+
+ 
+
   return (
     <form
       onSubmit={handleOnSubmit}
@@ -115,15 +127,25 @@ export default function MyForm() {
       <button
         type="submit"
         disabled={serverState.submitting}
-        className="text-white mx-auto px-2 py-1 ring-1 ring-white hover:bg-rose-700"
+        className="text-white mx-auto px-6 py-1 ring-1 ring-white hover:bg-rose-700"
       >
         Envoyer
       </button>
+      <Modal 
+        isOpen={isOpen} 
+        handleClose={closeModal}
+        >
+          <header>
+              <h1 className="text-3xl">Merci pour votre message !</h1>
+              <p className="mt-4">J'y réponds dès que possible.</p>
+          </header>
+      </Modal>
       {serverState.status && (
         <p className={!serverState.status.ok ? 'errorMsg' : ''}>
           {serverState.status.msg}
         </p>
       )}
+      
     </form>
   )
 }
