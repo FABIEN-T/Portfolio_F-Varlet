@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         <p className="text-white font-semi-bold text-xs sm:text-sm">
-          © Copyright 2023 - Fabien Varlet
+          © Copyright 2024 - Fabien Varlet
         </p>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 import MyFormSpree from './MyFormSpree'
+// import MyFormEss from './MyFormEss'   
 
 export default function SectionContact() {
   return (
@@ -7,6 +8,7 @@ export default function SectionContact() {
         Contactez-moi
       </h2>
       <MyFormSpree />
+      {/* <MyFormEss /> */}
     </section>
-  )
+  )   
 }

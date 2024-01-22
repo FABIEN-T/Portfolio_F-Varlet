@@ -15,7 +15,7 @@ export const datasProjects = [
     title: 'Ohmyfood',
     description: 'Création d’un site de commande de repas en ligne',
     image: 'images/mockups/P3_Ohmyfood.jpg',
-    linkDemo: 'https://fabien-t.github.io/FabienVarlet_3_03122021/public/',
+    linkDemo: 'https://ohmyfood-tan.vercel.app/index.html',
     linkGit: 'https://github.com/FABIEN-T/FabienVarlet_3_03122021',
     catCard: 1,
     // bgColor: 'bg-gradient-to-t from-rose-900 to-myBlue',
